@@ -24,3 +24,8 @@ execute "echo message" do
   command "echo '#{message}'"
   action :run
 end
+
+execute "create files" do
+	command "touch /tmp/hi"
+	action : run
+end
